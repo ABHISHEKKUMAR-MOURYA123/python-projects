@@ -1,1 +1,32 @@
+def calculate_lifetime_days(birth_year, current_year):
+    lifetime_days = (current_year - birth_year) * 365
+    return lifetime_days
 
+def  calculate_lifetime_weeks(birth_year, current_year):
+    lifetime_weeks = (current_year - birth_year) * 52
+    return lifetime_weeks
+
+
+def main():
+    birth_year = int(input("Enter your birth year: "))
+    current_year = int(input("Enter the current year: "))
+
+def calculate_lifetime_days(birth_year, current_year):
+    lifetime_days = (current_year - birth_year) * 365
+    return lifetime_days
+
+def calculate_lifetime_weeks(birth_year, current_year):
+    lifetime_weeks = (current_year - birth_year) * 52
+    return lifetime_weeks
+
+def main():
+    birth_year = int(input("Enter your birth year: "))
+    current_year = int(input("Enter the current year: "))
+
+    lifetime_days = calculate_lifetime_days(birth_year, current_year)
+    lifetime_weeks = calculate_lifetime_weeks(birth_year, current_year)
+    print(f"Your lifetime in days is: {lifetime_days}")
+    print(f"Your lifetime in weeks is: {lifetime_weeks}")
+
+if __name__ == "__main__":
+    main()
